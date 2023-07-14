@@ -1,0 +1,40 @@
+.del-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 2px #3369f2;
+  border-radius: 8px;
+  z-index: 1000;
+}
+.del-modal h3 {
+  text-align: center;
+  color: #000;
+}
+
+.del-modal__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.del-modal__buttons button {
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.del-modal__buttons button:nth-child(1) {
+  background: #3369f2;
+}
+
+.del-modal__buttons button:nth-child(2) {
+  background: #f23333;
+}

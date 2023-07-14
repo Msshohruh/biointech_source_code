@@ -1,0 +1,132 @@
+.section-container {
+  padding: 20px;
+  overflow-y: auto;
+}
+.grid-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  place-content: center;
+  column-gap: 15px;
+  row-gap: 20px;
+}
+.grid-wrapper .article {
+  height: 100%;
+}
+.grid-wrapper.videos {
+  grid-template-columns: repeat(auto-fill, 405px);
+}
+.grid-wrapper__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.grid-wrapper__item img {
+  border-radius: 12px;
+}
+.grid-wrapper__item h4,
+.grid-wrapper__item h5 {
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: inherit;
+}
+
+.grid-wrapper__item--btn {
+  display: flex;
+  position: absolute;
+  top: 3px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.edit-btn {
+  right: 40px;
+  background: #3369f2;
+}
+.delete-btn {
+  right: 5px;
+  background: #f23333;
+}
+
+.grid-wrapper__item.article {
+  gap: 5px;
+  background: #4b4b4b;
+}
+
+.modal,
+.modal-loader {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  z-index: 1;
+}
+.modal-loader {
+  max-width: 200px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.modal-form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-form label p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #3369f2;
+  margin-bottom: 5px;
+}
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 2.2rem;
+  resize: none;
+}
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border: 1px solid #3369f2;
+  border-radius: 2px;
+}
+.modal .close-btn {
+  padding: 5px 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #363636d4;
+}
+
+.loading {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}

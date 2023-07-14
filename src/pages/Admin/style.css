@@ -1,0 +1,60 @@
+.main-admin + footer {
+  display: none;
+}
+.main-admin {
+  overflow-y: hidden;
+}
+.admin__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #1d1c1c;
+}
+.wrapper {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: inherit;
+}
+.admin__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #fff;
+}
+.admin__title h1 {
+  color: #fff;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.admin__title h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #999999;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 6px 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #fff;
+  background: #3369f2;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+.add-btn:active {
+  opacity: 0.7;
+}
+.add-btn:disabled {
+  opacity: 0.5;
+}
